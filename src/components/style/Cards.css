@@ -1,0 +1,31 @@
+.features-item-container{
+    width: 100%;
+    
+}
+.features-item-container .cards-item-wrap{
+    width: 100px;
+    height: 400px;
+}
+.features-item-container > .text-wrapper{
+    width: 100%;
+    max-width: 760px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-self: center;
+}
+.features-item-container > .text-wrapper h3{
+    font-weight: 500;
+    font-style: italic;
+    color: #606C84;
+}
+.cards-guy{
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+}
+.cards-bg{
+    position: absolute;
+    left: 90px;
+}
