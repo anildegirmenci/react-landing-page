@@ -1,6 +1,6 @@
 import React from 'react';
 import Guy from '../assets/images/people.png';
-import Bg from '../assets/images/bg.png';
+import Bg from '../assets/images/guy-bg.png';
 import './style/Cards.css';
 
 

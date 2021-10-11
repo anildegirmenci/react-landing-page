@@ -25,6 +25,11 @@
     position: absolute;
     left: 100px;
 }
+.cards-girl{
+    z-index: 1;
+    position: absolute;
+    left: 240px;
+}
 .cards-bg{
     position: absolute;
     left: 90px;

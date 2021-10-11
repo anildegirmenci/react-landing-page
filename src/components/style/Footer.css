@@ -153,8 +153,9 @@
 .footer-logo{
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
+    margin-right: 150px;
     width: 200px;
+    padding-left: 30px;
 }
 .logo-style{
     width: 200px;

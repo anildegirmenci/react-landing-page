@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/images/mini-logo.svg';
 import { Button } from './Button'
 import './style/Footer.css';
+import './style/Cards.css';
+import Girl from '../assets/images/girl.png';
+import Bg from '../assets/images/girl-bg.png';
 
 
 function Footer() {
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>
-                <h1 className='footer-subscription-heading'>
-                    Skip logging in,
-                    get what you need
-                    with a few key details
-                </h1>
-                <div className='input-areas'>
+                <div>
+                    <div className='img-areas'>
+                    <img className='cards-girl' src={Girl} alt='People' />
+                    <img className='cards-bg' src={Bg} alt='Background' />
+                    </div>
                     <form className='input-areas'>
                         <input className='footer-input' name='name' type='text' placeholder='Enter name' />
                         <input className='footer-input' name='email' type='email' placeholder='Enter email' />
@@ -22,7 +24,7 @@ function Footer() {
                         <input className='footer-input' name='job' type='text' placeholder='Please Select' />
                         <input className='footer-input' name='companyname' type='text' placeholder='Enter company name' />
                         <input className='footer-input' name='msg' type='text' placeholder='Enter message' />
-                        <Button buttonStyle='btn--outline'>Send Now</Button>
+                        <Button buttonStyle='btn--primary' buttonSize='btn--large'>Send Now</Button>
                     </form>
                 </div>
             </section>
@@ -32,7 +34,7 @@ function Footer() {
                         <div className='footer-link-items footer-logo'>
                             <img className='logo-style' src={Logo} alt='Logo' width='200px' />
                             <div>
-                                Siphome, LLC
+                                <div style={{fontWeight:'700'}}>Siphome, LLC</div>
                                 The New Building 2320  Lang Avenue,
                                 Park Valley, Utah,
                                 United States.
@@ -67,15 +69,15 @@ function Footer() {
                             <h2>Stay Connected</h2>
                             <Link className='social-icon-link facebook cards-flex' to='/' target='_blank' aria-label='Facebook'>
                                 <i className='fab fa-facebook-f' />
-                                <div style={{ marginLeft: '10px' }}>Facebook</div>
+                                <div style={{ marginLeft: '10px',fontSize:'18px' }}>Facebook</div>
                             </Link>
                             <Link className='social-icon-link twitter cards-flex' to='/' target='_blank' aria-label='Twitter'>
                                 <i className='fab fa-twitter' />
-                                <div style={{ marginLeft: '10px' }}>Twitter</div>
+                                <div style={{ marginLeft: '10px',fontSize:'18px' }}>Twitter</div>
                             </Link>
                             <Link className='social-icon-link instagram cards-flex' to='/' target='_blank' aria-label='Instagram'>
                                 <i className='fab fa-instagram' />
-                                <div style={{ marginLeft: '10px' }}>Instagram</div>
+                                <div style={{ marginLeft: '10px',fontSize:'18px' }}>Instagram</div>
                             </Link>
                         </div>
                     </div>
