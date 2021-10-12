@@ -8,10 +8,7 @@ import Msg2 from '../assets/images/2.svg';
 import Msg3 from '../assets/images/3.svg';
 import Msg4 from '../assets/images/4.svg';
 import FeatureIcons from '../assets/images/features.png';
-import Icon1 from '../assets/images/icon.png';
-import Icon2 from '../assets/images/icon-1.png';
-import Icon3 from '../assets/images/icon-2.png';
-import Icon4 from '../assets/images/icon-3.png';
+
 
 function Features() {
     return (

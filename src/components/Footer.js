@@ -55,7 +55,7 @@ function Footer() {
                         <option value="pls">Please Select</option>
                         <option value="m">M</option>
                         <option value="d">D</option>
-                        <option value="b">B</option>
+                        <option value="b">A</option>
                     </select>
                     <div className='input-text'>Company Name</div>
                     <input className='footer-input' name='companyname' type='text' placeholder='Enter company name' />
