@@ -11,6 +11,12 @@ import Bg from '../assets/images/girl-bg.png';
 import Ig from '../assets/images/ig.png';
 import Fb from '../assets/images/fb.png';
 import Tw from '../assets/images/tw.png';
+import V1 from '../assets/images/Vector.svg';
+import V2 from '../assets/images/Vector-1.svg';
+import V3 from '../assets/images/Vector-2.svg';
+import V4 from '../assets/images/Vector-3.svg';
+import V5 from '../assets/images/Vector-4.svg';
+import V6 from '../assets/images/Vector-5.svg';
 
 
 
@@ -25,6 +31,14 @@ function Footer() {
                         with a few key details
                     </h2>
                     <div className='img-areas'>
+                        <div className='vectors'>
+                            <img className='question-mark' src={V1} alt='v1' />
+                            <img className='question-mark' src={V2} alt='v2' />
+                            <img className='question-mark' src={V3} alt='v3' />
+                            <img className='question-mark' src={V4} alt='v4' />
+                            <img className='question-mark' src={V5} alt='v5' />
+                            <img className='question-mark' src={V6} alt='v6' />
+                        </div>
                         <img className='cards-girl' src={Girl} alt='People' />
                         <img className='cards-girl-bg' src={Bg} alt='Background' />
                     </div>
@@ -90,15 +104,15 @@ function Footer() {
                         <div className='footer-link-items'>
                             <h2 style={{ fontSize: '23px' }}>Stay Connected</h2>
                             <Link className='social-icon-link facebook cards-flex' to='/' target='_blank' aria-label='Facebook'>
-                                <img src={Fb} className='fab fa-facebook-f' />
+                                <img src={Fb} alt='fb' className='fab fa-facebook-f' />
                                 <div style={{ marginLeft: '13px', fontSize: '18px' }}>Facebook</div>
                             </Link>
                             <Link className='social-icon-link twitter cards-flex' to='/' target='_blank' aria-label='Twitter'>
-                                <img src={Tw} className='fab fa-twitter' />
+                                <img src={Tw} alt='tw' className='fab fa-twitter' />
                                 <div style={{ marginLeft: '13px', fontSize: '18px' }}>Twitter</div>
                             </Link>
                             <Link className='social-icon-link instagram cards-flex' to='/' target='_blank' aria-label='Instagram'>
-                                <img src={Ig} className='fab fa-instagram' />
+                                <img src={Ig} alt='ig' className='fab fa-instagram' />
                                 <div style={{ marginLeft: '13px', fontSize: '18px' }}>Instagram</div>
                             </Link>
                         </div>

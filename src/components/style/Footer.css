@@ -25,11 +25,12 @@
     letter-spacing: 5px;
     color: #1C57C9;
 }
+
 .footer-title{
     width: 440px;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 200px;
     float: left;
 }
 .footer-subscription-heading{
@@ -116,7 +117,7 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin-left: 750px;
+    margin-left: 950px;
     margin-top: -170px;
 }
 .input-text{
@@ -207,4 +208,22 @@
     .social-media-wrap {
       flex-direction: column;
     }
+  }
+
+
+
+
+  /* Animations */
+  .question-mark{
+    animation: question 4s ease-out infinite alternate;
+  }
+  @keyframes question {
+      from{
+          transform: rotateX(0deg);
+          transform: rotateY(0deg);
+        }
+        to{
+            transform: rotateX(40deg);
+            transform: rotateY(5deg);
+        }
   }
