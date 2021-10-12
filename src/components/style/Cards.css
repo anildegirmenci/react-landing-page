@@ -29,8 +29,14 @@
     z-index: 1;
     position: absolute;
     left: 240px;
+    top: 1995px;
 }
 .cards-bg{
     position: absolute;
     left: 90px;
+}
+.cards-girl-bg{
+    position: absolute;
+    left: 90px;
+    top: 1975px;
 }

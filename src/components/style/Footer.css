@@ -11,13 +11,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     margin-bottom: 24px;
     padding: 24px;
     color: #000;
 }
-
+.footer-container > .footer-subscription h2{
+    font-size: 50px;
+}
+.footer-container > .footer-subscription h3{
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #1C57C9;
+}
+.footer-title{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    float: left;
+}
 .footer-subscription-heading{
     margin-bottom: 24px;
     font-size: 24px;
@@ -37,6 +51,7 @@
     font-size: 18px;
     margin-bottom: 16px;
     border: 1px solid;
+    border-color: #999;
 }
 
 .footer-links{
@@ -70,13 +85,14 @@
 }
 
 .footer-link-items a{
-    color: #000;
+    color: #606C84;
     text-decoration: none;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .footer-link-items a:hover{
-    color: #696969;
+    color: #1C57C9;
+    font-weight: 700;
     transition: 0.2s ease-out;
 }
 
@@ -93,13 +109,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 24px;
-    padding: 24px;
+    padding-top: 200px;
     color: #000;
 }
 .input-areas{
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+    margin-left: 750px;
+    margin-top: -170px;
+}
+.input-text{
+    font-size: 20px;
+    color: #262B35;
+    padding-bottom: 5px;
+}
+.img-areas{
 }
 /* Social Icons */
 .social-icon-link{
@@ -141,8 +166,9 @@
 }
 
 .website-rights{
-    color: #000;
+    color: #606C84;
     margin-top: 50px;
+    font-size: 16px;
 }
 .cards-flex{ 
     display: flex;
