@@ -1,7 +1,6 @@
 .features-item-container{
     width: 100%;
     height: 1100px;
-    padding: 0 500px 0 300px;
 }
 .features-item-container .cards-item-wrap{
     width: 100px;
@@ -20,6 +19,7 @@
     font-weight: 600;
     font-style: italic;
     color: #606C84;
+    width: 800px;
 }
 .features-item-container > .features-title h3{
     font-size: 14px;
@@ -67,6 +67,13 @@
     width: 600px;
     margin-top: 70px;
 }
+.features-ipad{
+    display: none;
+}
+.features-mobile1{display: none;}
+.features-mobile2{display: none;}
+.features-mobile3{display: none;}
+.features-mobile4{display: none;}
 .img-areas{
     display: flex;
     flex-direction: row;
@@ -79,16 +86,171 @@
 .msg2{left: 170px;top: 1470px;}
 .msg3{left: 200px;top: 1590px;}
 .msg4{left: 370px;top: 1720px;}
+
 .message{
-    animation: msg 4s ease-out infinite alternate;
+    animation: msg 2s ease-out infinite alternate;
   }
   @keyframes msg {
       from{
           transform: rotateX(0deg);
-          transform: rotateY(0deg);
         }
         to{
-            transform: rotateX(40deg);
-            transform: rotateY(5deg);
+            transform: rotateX(90deg);
         }
   }
+
+  /* Mobile */
+  @media screen and (max-width: 768px) {
+      .features-item-container{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+    .features-item-container > .text-wrapper{
+        width: 768px;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        }
+        .features-item-container > .text-wrapper h3{
+          width: 520px;
+          justify-content: center;
+          text-align: center;
+        }
+        .features-item-container > .features-title{
+            width: 768px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 700px;
+            margin-bottom: 500px;
+        }
+        .features-item-container > .features-title > h4{
+            width: 500px;
+        }
+        .features-icon{
+            display: none;
+        }
+        .features-ipad{
+            display: flex;
+            width: 500px;
+            margin-top: 70px;
+        }
+        .cards-guy{
+            z-index: 1;
+            position: absolute;
+            top: 1220px;
+            left: 250px;
+        }
+        .cards-bg{
+            position: absolute;
+            left: 150px;
+            top: 1180px;
+        }
+        .msg1{left: 350px;top: 1200px;}
+        .msg2{left: 100px;top: 1270px;}
+        .msg3{left: 150px;top: 1390px;}
+        .msg4{left: 320px;top: 1520px;}
+
+        .cards-girl{
+            z-index: 1;
+            position: absolute;
+            left: 300px;
+            top: 2900px;
+        }
+        .cards-girl-bg{
+            position: absolute;
+            left: 150px;
+            top: 2880px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .features-item-container{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+      .features-item-container > .text-wrapper{
+          width: 320px;
+          height: 200px;
+          justify-content: center;
+          text-align: center;
+          margin-top: 50px;
+          }
+          .features-item-container > .features-title{
+              width: 375px;
+              display: flex;
+              flex-direction: column;
+              margin-left: 0px;
+              align-items: center;
+              text-align: center;
+              justify-content: center;
+              margin-top: 700px;
+              margin-bottom: 500px;
+          }
+          .features-item-container > .features-title > h4{
+              width: 300px;
+          }
+          .features-icon{
+            display: none;
+          }
+          .features-ipad{
+            display: none;
+          }
+          .features-mobile1{
+            display: flex;
+            width: 350px;
+            margin-top: 40px;}
+            .features-mobile1{
+            display: flex;
+            width: 350px;
+            margin-top: 40px;}
+            .features-mobile2{
+            display: flex;
+            width: 350px;
+            margin-top: 40px;}
+            .features-mobile3{
+            display: flex;
+            width: 350px;
+            margin-top: 40px;}
+            .features-mobile4{
+            display: flex;
+            width: 350px;
+            margin-bottom: 300px;
+        }
+        .cards-guy{
+            width: 270px;
+            z-index: 1;
+            position: absolute;
+            top: 1400px;
+            left: 70px;
+        }
+        .cards-bg{
+            width: 300px;
+            position: absolute;
+            left: 30px;
+            top: 1365px;
+        }
+        .msg1{width: 200px; left: 150px;top: 1380px;}
+        .msg2{width: 200px;left:-10px;top: 1450px;}
+        .msg3{width: 200px;left: 20px;top: 1530px;}
+        .msg4{width: 180px;left: 200px;top: 1640px;}
+
+        .cards-girl{
+            width: 190px;
+            z-index: 1;
+            position: absolute;
+            left: 120px;
+            top: 3630px;
+        }
+        .cards-girl-bg{
+            width: 330px;
+            position: absolute;
+            left: 17px;
+            top: 3620px;
+        }
+}

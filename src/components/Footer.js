@@ -31,44 +31,40 @@ function Footer() {
                         with a few key details
                     </h2>
                     <div className='img-areas'>
-                        <div className='vectors'>
-                            <img className='question-mark' src={V1} alt='v1' />
-                            <img className='question-mark' src={V2} alt='v2' />
-                            <img className='question-mark' src={V3} alt='v3' />
-                            <img className='question-mark' src={V4} alt='v4' />
-                            <img className='question-mark' src={V5} alt='v5' />
-                            <img className='question-mark' src={V6} alt='v6' />
-                        </div>
                         <img className='cards-girl' src={Girl} alt='People' />
                         <img className='cards-girl-bg' src={Bg} alt='Background' />
                     </div>
                 </div>
-                <form className='input-areas'>
-                    <div className='input-text'>Your Name (required)</div>
-                    <input className='footer-input' name='name' type='text' placeholder='Enter name' />
-                    <div className='input-text'>Email (required)</div>
-                    <input className='footer-input' name='email' type='email' placeholder='Enter email' />
-                    <div className='input-text'>Subject</div>
-                    <input className='footer-input' name='subject' type='text' placeholder='Enter subject' />
-                    <div className='input-text'>Select Job</div>
-                    <select className='footer-input' placeholder='Please Select' name='job'>
-                        <option value="pls">Please Select</option>
-                        <option value="m">M</option>
-                        <option value="d">D</option>
-                        <option value="b">A</option>
-                    </select>
-                    <div className='input-text'>Company Name</div>
-                    <input className='footer-input' name='companyname' type='text' placeholder='Enter company name' />
-                    <div className='input-text'>Message</div>
-                    <input className='footer-input' name='msg' type='text' placeholder='Enter message' />
-                    <Button buttonStyle='btn--primary' buttonSize='btn--large'>Send Now</Button>
+                <form>
+                    <div className='input-areas'> 
+                        <div className='input-text'>Your Name (required)</div>
+                        <input className='footer-input' name='name' type='text' placeholder='Enter name' />
+                        <div className='input-text'>Email (required)</div>
+                        <input className='footer-input' name='email' type='email' placeholder='Enter email' />
+                        <div className='input-text'>Subject</div>
+                        <input className='footer-input' name='subject' type='text' placeholder='Enter subject' />
+                        <div className='input-text'>Select Job</div>
+                        <select className='footer-input' placeholder='Please Select' name='job'>
+                            <option value="pls">Please Select</option>
+                            <option value="m">M</option>
+                            <option value="d">D</option>
+                            <option value="b">A</option>
+                        </select>
+                        <div className='input-text'>Company Name</div>
+                        <input className='footer-input' name='companyname' type='text' placeholder='Enter company name' />
+                        <div className='input-text'>Message</div>
+                        <input className='footer-input input-msg' name='msg' type='text' placeholder='Enter message' />
+                    </div>
+                    <Button className='input-button'  buttonStyle='btn--primary' buttonSize='btn--large'>Send Now</Button>
                 </form>
             </section>
             <section className='footer-navigation'>
                 <div className='footer-links'>
                     <div className='footer-link-wrapper'>
-                        <div className='footer-link-items footer-logo'>
-                            <img className='logo-style' src={Logo} alt='Logo' width='200px' />
+                        <div className='footer-link-items footer-icon'>
+                            <div className='logo-mobile'>
+                                <img className='logo-style' src={Logo} alt='Logo' width='200px' />
+                            </div>
                             <div>
                                 <div style={{ fontWeight: '700' }}>Siphome, LLC</div>
                                 The New Building 2320  Lang Avenue,
@@ -76,15 +72,15 @@ function Footer() {
                                 United States.
                                 84329
                             </div>
-                            <div style={{ paddingTop: '15px' }}>
+                            <div className='footer-logo-phone'>
                                 P: +1 176 909 2900
                             </div>
-                            <div>
+                            <div className='footer-logo-email'>
                                 E: siphome@gmail.com
                             </div>
                         </div>
                     </div>
-                    <div className='footer-link-wrapper'>
+                    <div className='footer-link-wrapper-items'>
                         <div className='footer-link-items'>
                             <h2>Navigation</h2>
                             <Link to='/signin'>Home</Link>
